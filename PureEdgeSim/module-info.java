@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * 
- */
-module PureEdgeSim_Mio {
-}
