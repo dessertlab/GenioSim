@@ -15,7 +15,7 @@ public class ProgettoGenio {
 	private static String outputPath = "PureEdgeSim/examples/ProgettoGenio/ProgettoGenio_output/";
 
 	// cambio la modalità di esecuzione
-	private static String exampleMode = "Scenario_Alessio";
+	private static String exampleMode = "SmartCity";
 
 	/*
 	Algoritmi container:
@@ -156,25 +156,7 @@ public class ProgettoGenio {
 				sim.setCloudDatacentersXML(settingsPath, "Scenario_Misto/cloud_Scenario_Misto.xml");
 				sim.setSimulationName(exampleMode);
 				break;	
-
-			case "Scenario_1":
-				sim.setSimulationParameterProperties(settingsPath, "Scenario_1/simulation_parameters_Scenario_1.properties");
-				sim.setApplicationsXML(settingsPath, "Scenario_1/applications_Scenario_1.xml");
-				sim.setUsersXML(settingsPath, "Scenario_1/users_Scenario_1.xml");
-				sim.setEdgeDatacentersXML(settingsPath, "Scenario_1/edge_datacenters_Scenario_1.xml");
-				sim.setCloudDatacentersXML(settingsPath, "Scenario_1/cloud_Scenario_1.xml");
-				sim.setONTsXML(settingsPath, "Scenario_1/ONT_Scenario_1.xml");
-				sim.setSimulationName(exampleMode);
-				break;
-
-			case "Scenario_Alessio":
-				sim.setSimulationParameterProperties(settingsPath, "Scenario_Alessio/simulation_parameters_Scenario_Alessio.properties");
-				sim.setApplicationsXML(settingsPath, "Scenario_Alessio/applications_Scenario_Alessio.xml");
-				sim.setUsersXML(settingsPath, "Scenario_Alessio/users_Scenario_Alessio.xml");
-				sim.setEdgeDatacentersXML(settingsPath, "Scenario_Alessio/edge_datacenters_Scenario_Alessio.xml");
-				sim.setCloudDatacentersXML(settingsPath, "Scenario_Alessio/cloud_Scenario_Alessio.xml");
-				sim.setSimulationName(exampleMode);
-				break;
+			
 		}
 
         //cambio l'orchestratore con quello creatto da me
