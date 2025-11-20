@@ -589,8 +589,8 @@ public class SimLog {
 	}
 
 	public String getFileName(String extension) {
-		//String outputFilesName = SimulationParameters.outputFolder + "/" + simStartTime;
-		String outputFilesName = SimulationParameters.settingspath + "/" + SimulationParameters.simName + "/Output";
+		String outputFilesName = SimulationParameters.outputFolder + "/" + simStartTime + "/" + SimulationParameters.simName + "/Output";
+		//String outputFilesName = SimulationParameters.settingspath + "/" + SimulationParameters.simName + "/Output";
 
 		if(!new File(outputFilesName).mkdirs()) existingFolder = true;				//modificato da me, se esiste già la cartella allora inposto questa variabile a true
 		else existingFolder = false;
