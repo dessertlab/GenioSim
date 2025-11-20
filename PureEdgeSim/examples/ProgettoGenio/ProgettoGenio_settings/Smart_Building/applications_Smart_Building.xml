@@ -10,7 +10,7 @@
 		</container>
         <users_type>[20,1]</users_type> <!--in this case 10 users "1" type-->
 		<task>
-			<latency>0.5</latency> <!-- a great number represents no latency-sensitivity -->
+			<latency>0.2</latency> <!-- a great number represents no latency-sensitivity -->
 			<request_size>750</request_size> <!-- La size della request rappresentata in KB -->
 			<results_size>500</results_size> <!-- La size del risultato rappresentato in KB -->
 			<task_length>5000</task_length> <!-- la lunghezza del taks rappresentata in Million Istructions (MI) -->
