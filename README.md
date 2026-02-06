@@ -100,3 +100,18 @@ Opening a specific subfolder, you can modify the following files to customize yo
 Once the files have been modified, you can start the simulation by executing the "Run" command for the `ProgettoGenio` file located in `PureEdgeSim/examples.ProgettoGenio`.
 
 The simulation results will be saved in the specific output folder at `/Output`.
+
+## How to Replicate an Experiment
+
+To replicate an experiment, the tool must be used as explained above. Suppose we want to replicate the first experiment, choosing Smart Building as the scenario. In this case, you need to navigate to the Smart Building folder and modify the relevant files. For our experiment, we appropriately modify the following files:
+
+- `applications_Smart_Building.xml` — where you can modify the application properties
+- `edge_datacenters_Smart_Buildings.xml` — where host machines and VMs are configured (in our case, we have a single host with multiple VMs)
+- `simulation_parameters_Smart_Building.properties` — for the simulation configuration parameters
+- `users.xml` — for the users
+
+Once these files have been appropriately modified, you need to modify the Java file `ProgettoGenio` in `/PureEdgeSim`, where in the main function you simply uncomment the line related to the offloading and orchestration algorithms to be used (by default, leave the currently uncommented line). Additionally, in the same file, change the variable `exampleMode` to the name of the chosen scenario, which in our case is `"Smart_Building"`.
+
+Finally, launch the simulation and wait for the results in the output as well as in the logs, which are displayed by default during execution.
+
+For the second experiment, choosing the scenario is very simple since there is a single folder called `Scenario_Misto`. Then proceed as previously described.
