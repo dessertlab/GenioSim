@@ -84,3 +84,19 @@ The simulator allows researchers to:
 - Perform qualitative analysis based on collected metrics such as latency and TSR.
 - Assess the impact of factors like network latency, node density, and balancing strategies on overall QoS.
 
+## How to Use the Simulator
+
+To use the simulator, an IDE such as VSCode, IntelliJ, or similar is required. Once accessed, you need to configure the Java or JDK version. Clone the repository and open the folder within the IDE.
+
+The generic configuration files used by the simulator are located in the `PureEdgeSim/settings/` folder. For a specific experiment, you can modify the files in `PureEdgeSim/examples.ProgettoGenio/ProgettoGenio_settings/`, where you will find various folders, one per scenario.
+
+Opening a specific subfolder, you can modify the following files to customize your scenario:
+- `applications_NameScenario.xml`
+- `cloud_NameScenario.xml`
+- `edge_datacenters_NameScenario.xml`
+- `users.xml`
+- `simulation_parameters_NameScenario.properties`
+
+Once the files have been modified, you can start the simulation by executing the "Run" command for the `ProgettoGenio` file located in `PureEdgeSim/examples.ProgettoGenio`.
+
+The simulation results will be saved in the specific output folder at `/Output`.
